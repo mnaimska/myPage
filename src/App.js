@@ -4,7 +4,7 @@ import './App.scss';
 function App() {
   return (
     <div className="App">
-      Moja strona
+      Moja strona _ pierwszy commit
     </div>
   );
 }
