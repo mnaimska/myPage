@@ -1,8 +1,78 @@
 @import "colors";
 
+@media (min-width:0px){
+  .navigation-li {
+    display: none;
+  }
+  .surname {
+    display: block;
+  }
+  .burger-menu {
+    display: block;
+  }
+
+
+
+}
+@media (min-width:900px){
+  .navigation-li {
+    display: block;
+  }
+  .burger-menu {
+    display: none;
+  }
+}
+
+.container {
+  cursor:pointer;
+}
+
 nav {
   background-color: $color-nav;
   color:$color-nav-font;
+  box-sizing: border-box;
+  content: "";
+  position: relative;
+}
+.burger-menu {
+  content: "";
+  position: absolute;
+  top:10px;
+  right: 50px;
+  z-index: 1;
+  background-color: $color-nav;
+  cursor: pointer;
+  border: none;
+
+}
+.burger-menu-div1, .burger-menu-div2, .burger-menu-div3 {
+
+  background-color:$color-nav-font;
+  width:35px;
+  height: 5px;
+  margin: 5px 0px;
+  transition: 0.4s;
+
+}
+
+
+.burgerX1 {
+  transform: rotate(-45deg) translate(-9px, 6px);
+  background-color: red;
+  width:40px;
+  height:5px;
+  margin: 5px 0px;
+
+}
+.burgerX2  {
+  opacity: 0;
+}
+.burgerX3 {
+  transform: rotate(45deg);
+  background-color: red;
+  width:40px;
+  height:5px;
+  margin: 5px 0px;
 }
 ul {
   display: flex;
@@ -12,10 +82,12 @@ ul {
   color:$color-surname;
   text-transform: uppercase;
 }
+
 .navigation-web {
   display: flex;
   justify-content: flex-end;
   padding: 5px;
+  box-sizing: border-box;
 }
 
 .navigation-li {
