@@ -3,6 +3,7 @@
 @media (min-width:0px){
   .navigation-li {
     display: none;
+
   }
   .surname {
     display: block;
@@ -10,21 +11,32 @@
   .burger-menu {
     display: block;
   }
-
+//.navigation-web {
+//  margin:50px;
+//  flex-direction: column;
+//  justify-content: flex-end;
+//}
 
 
 }
-@media (min-width:900px){
+@media (min-width:760px){
   .navigation-li {
     display: block;
   }
   .burger-menu {
     display: none;
   }
+  //.navigation-web {
+  //  flex-direction: row;
+  //
+  //}
 }
 
 .container {
   cursor:pointer;
+  //content: "";
+  //position: absolute;
+  //right: 50px;
 }
 
 nav {
@@ -34,11 +46,19 @@ nav {
   content: "";
   position: relative;
 }
+.showBurgerX {
+  display: flex;
+  justify-content: flex-end;
+  padding: 5px;
+  box-sizing: border-box;
+  flex-direction: column;
+  color:white;
+}
 .burger-menu {
   content: "";
   position: absolute;
   top:10px;
-  right: 50px;
+  right: 0px;
   z-index: 1;
   background-color: $color-nav;
   cursor: pointer;
@@ -88,6 +108,21 @@ ul {
   justify-content: flex-end;
   padding: 5px;
   box-sizing: border-box;
+}
+.navigation-mobile {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  a{
+    color:$color-nav-font;
+    text-decoration: none;
+    margin: 5px;
+  }
+}
+.mobile-nav {
+
+  padding: 5px;
 }
 
 .navigation-li {

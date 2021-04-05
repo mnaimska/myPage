@@ -1,9 +1,12 @@
 import React from "react";
 import {Switch} from "react-router-dom";
+import Navigation from "./Navigation";
 
 const Work =()=>{
     return (
-        <>Work
+        <>
+            <Navigation/>
+            Work
             <button className="button"><a href="/">Home</a></button>
         </>
     )

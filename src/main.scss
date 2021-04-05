@@ -11,6 +11,74 @@ body {
   font-family: 'Lato', sans-serif;
   background-color: $color-background;
   color:$color-body-font;
+
+}
+.grid-container {
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "Additional Additional Additional Additional"
+    "Profile Profile Profile Profile"
+    "Employment Employment Employment Employment"
+    "Education Education Education Education"
+    " Hobby Hobby Hobby Hobby"
+    "Contact-me Contact-me Contact-me Contact-me";
+}
+.Additional {
+  grid-area: Additional;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5px;
+  background-color: #B5A433;
+}
+.Employment { grid-area: Employment; }
+
+.Education { grid-area: Education; }
+
+.Hobby { grid-area: Hobby; }
+
+.Contact-me { grid-area: Contact-me; }
+
+.Profile {
+  display: grid;
+  background-color: #B5A433;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.3fr 1fr;
+  gap: 0px 10px;
+  grid-template-areas:
+    "TitleProfile TitleProfile"
+    "Humanistic Technical";
+  grid-area: Profile;
 }
 
+.Humanistic { grid-area: Humanistic; }
+
+.Technical { grid-area: Technical; }
+
+.TitleProfile {
+  grid-area: TitleProfile;
+  display: flex;
+  padding: 10px 20px;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+
+
+}
+h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 10px;
+}
+p {
+  margin:10px;
+}
 @import "../src/styles/navigation";
+@import "../src/styles/profile";
+@import "../src/styles/additional";

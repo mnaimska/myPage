@@ -1,0 +1,19 @@
+@import "colors";
+
+.underline {
+  width: 20%;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  margin: 0 0;
+
+}
+.Over-title-addings {
+  display: flex;
+  justify-content: flex-start;
+}
+.underline-black {
+  width:80%;
+  background-color: $color-nav;
+  margin: 10px;
+}

@@ -1,0 +1,75 @@
+@import "colors";
+
+@media (min-width: 0px){
+  .mobile-additional {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    padding:5px;
+  }
+  .web-additional {
+    display: none;
+  }
+}
+@media (min-width:760px){
+  .mobile-additional {
+    display: none;
+  }
+  .web-additional {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+  }
+}
+
+
+.additional-icon {
+  background-color: #B5A433;
+  border: none;
+  cursor: pointer;
+
+  :hover {
+    color: red;
+    border:none;
+    background-color: #B5A433;
+  }
+}
+.show-hide-btn {
+  width: 80px;
+  background-color: #B5A433;
+  padding: 5px;
+  margin: 5px;
+  border: 1px $color-nav solid;
+  text-transform: uppercase;
+  cursor:pointer;
+
+ :after {
+    color:red;
+  }
+}
+.additional-btns {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.polish-flag {
+  width:20px;
+  height: 13px;
+  margin-left: 5px;
+  background-image: url("../graphics/poland-flag-icon-32.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: none;
+
+}
+.italian-flag {
+  width:20px;
+  height: 13px;
+  margin-left: 12px;
+  background-image: url("../graphics/italy-flag-icon-32.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: none;
+
+}
