@@ -1,0 +1,57 @@
+@import "colors";
+
+.flexbox-extra {
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "Extra Extra Extra"
+                        "Extra Extra Extra"
+                        "Extra Extra Extra"
+                        "Extra Extra Extra"
+;
+  //grid-column-gap: 5px;
+  //grid-row-gap: 30px;
+
+  margin: 20px;
+
+
+
+}
+.extra-icon {
+
+  :hover {
+    color:red;
+  }
+}
+.span-date {
+  font-size: 0.6rem;
+  color: $color-nav;
+  margin-bottom: 10px;
+}
+
+.small-p {
+  font-size: 0.8rem;
+  font-style: italic;
+}
+.single-window-extra {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: $color-background-yellow -3px 3px;
+  //padding: 5px;
+}
+.first {
+  border-bottom: $color-nav 2px dotted;
+  border-left: $color-nav 2px solid;
+  padding: 5px;
+  box-shadow: $color-background-yellow -3px 3px;
+}
+.second {
+  border-bottom: $color-nav 2px dotted;
+  border-left: $color-nav 2px dotted;
+  padding: 5px;
+}
+.span-extra {
+  padding: 5px;
+}

@@ -4,11 +4,11 @@
   .mobile-additional {
     display: flex;
     flex-direction: column;
-    align-content: flex-end;
-    padding:5px;
+    padding-top: 60px;
   }
   .web-additional {
     display: none;
+    padding-top: 60px;
   }
 }
 @media (min-width:760px){
@@ -43,10 +43,9 @@
   border: 1px $color-nav solid;
   text-transform: uppercase;
   cursor:pointer;
-
- :after {
-    color:red;
-  }
+}
+.show-hide-btn:hover {
+  color:red;
 }
 .additional-btns {
   display: flex;

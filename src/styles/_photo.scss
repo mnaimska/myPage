@@ -1,0 +1,178 @@
+@import "colors";
+
+@media (min-width: 0px){
+.slider {
+  min-width: 200px ;
+}
+  .single-photo-cv {
+    width: 300px;
+    height: 150px;
+  }
+  .second-photo-hobby {
+    width: 300px;
+    height: 150px;
+  }
+  .single-photo-hobby2 {
+    width: 300px;
+    height: 200px;
+  }
+  .single-photo-work2 {
+    width: 300px;
+    height: 150px;
+  }
+}
+@media (min-width: 375px){
+  .single-photo-cv{
+    width: 400px;
+    height: 200px;
+  }
+  .second-photo-hobby {
+    width: 400px;
+    height: 200px;
+  }
+  .single-photo-hobby2 {
+    width: 500px;
+    height: 300px;
+  }
+  .single-photo-work2 {
+    width: 400px;
+    height: 200px;
+  }
+}
+@media (min-width: 450px){
+  .single-photo-cv{
+    width: 500px;
+    height: 300px;
+  }
+  .second-photo-hobby {
+    width: 500px;
+    height: 300px;
+  }
+  .single-photo-work2 {
+    width: 500px;
+    height: 300px;
+  }
+}
+@media (min-width:650px){
+  .slider {
+    min-width: 600px;
+  }
+  .single-photo-cv{
+    width: 500px;
+    height: 300px;
+  }
+}
+
+.slider {
+  max-width:700px;
+  max-height: 350px;
+  display: flex;
+  justify-content: center;
+  border: 2px solid $color-background-yellow;
+  margin: 40px 30px 40px 30px;
+
+}
+
+
+.container-photo {
+  margin:10px;
+  position: relative;
+
+}
+
+
+.single-photo-cv{
+
+  margin:5px;
+  //flex-basis: 50%;
+  //flex-grow: 1;
+  background-image: url("../graphics/MN_small.jpg");
+  background-size: contain;
+
+  //width: 500px;
+  //height: 300px;
+  background-repeat: no-repeat;
+
+
+}
+
+.single-photo-hobby{
+  margin:5px;
+  //flex-basis: 32%;
+  //flex-grow: 1;
+  border: 2px solid $color-background-yellow;
+  background-image: url("../graphics/543010_10154264379205684_5039278148196170873_n.jpg");
+  background-size: cover;
+  width: 500px;
+  height: 300px;
+  background-repeat: no-repeat;
+}
+
+.second-photo-hobby{
+  margin:5px;
+  //flex-basis: 50%;
+  //flex-grow: 1;
+  background-image: url("../graphics/32915302_2019405684968060_1017106242046263296_n.jpg");
+  background-size: contain;
+  //width: 500px;
+  //height: 300px;
+  background-repeat: no-repeat;
+}
+.twoPhotos {
+  display: flex;
+}
+.single-photo-hobby2{
+
+  margin:5px;
+  //flex-basis: 32%;
+  //flex-grow: 1;
+  //border: 2px solid $color-background-yellow;
+  background-image: url("../graphics/Sova6.jpg");
+  background-size: contain;
+  //width: 500px;
+  //height: 300px;
+  background-repeat: no-repeat;
+}
+.single-photo-work{
+  margin:5px;
+  //flex-basis: 32%;
+  //flex-grow: 1;
+  //border: 2px solid $color-background-yellow;
+  background-image: url("../graphics/Sova.jpg");
+  background-size: contain;
+  width: 500px;
+  height: 300px;
+  background-repeat: no-repeat;
+}
+.single-photo-work2{
+  margin:5px;
+  //flex-basis: 32%;
+  //flex-grow: 1;
+  //border: 2px solid $color-background-yellow;
+  background-image: url("../graphics/61766674_2124558460994098_8150864522031136768_n.jpg");
+  background-size: contain;
+  //width: 500px;
+  //height: 300px;
+  background-repeat: no-repeat;
+  //display: flex;
+  //justify-content: center;
+}
+
+.single-photo-hobby3{
+  margin:5px;
+  //flex-basis: 32%;
+  //flex-grow: 1;
+  //border: 2px solid $color-background-yellow;
+  background-image: url("../graphics/Sova5_animalphotography.jpg");
+  background-size: contain;
+  width: 500px;
+  height: 300px;
+  background-repeat: no-repeat;
+}
+
+.span-photo {
+  position: absolute;
+  color: $color-background-yellow;
+  top:50px;
+  right:50px;
+}

@@ -38,7 +38,13 @@
   //position: absolute;
   //right: 50px;
 }
+.sticky-nav {
+  position: fixed;
+  top:0;
+  width:100%;
+  margin-bottom: 50px;
 
+}
 nav {
   background-color: $color-nav;
   color:$color-nav-font;

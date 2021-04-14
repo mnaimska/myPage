@@ -1,0 +1,57 @@
+@import "colors";
+
+@media (min-width:0px){
+
+}
+@media (min-width:760px){
+
+}
+
+
+.container-education {
+  display: flex;
+  //min-width: 400px;
+  flex-direction: column;
+  //max-width: 800px;
+  //align-items: center;
+
+  //flex-wrap: wrap;
+}
+.single-edu-div-1 {
+margin-left: 10%;
+  display: flex;
+}
+
+.single-edu-div-2 {
+  margin-left: 15%;
+  display: flex;
+}
+.single-edu-div-3 {
+  margin-left: 20%;
+  display: flex;
+}
+.single-edu-div-4 {
+  margin-left: 25%;
+  display: flex;
+}
+.single-edu-div-5 {
+  margin-left: 30%;
+  display: flex;
+}
+
+
+.edu-block {
+  display: flex;
+  flex-direction: column;
+  background-color: $color-background-yellow;
+  margin: 10px 0px 10px 10px;
+  border:dotted $color-nav 1px;
+  width:350px;
+  padding: 5px;
+
+}
+
+.span-edu {
+  font-weight: bolder;
+  margin-right: 50px;
+}

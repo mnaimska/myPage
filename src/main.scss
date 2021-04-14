@@ -1,10 +1,14 @@
 @import '../node_modules/bulma/bulma.sass';
 @import '../src/styles/colors';
+@import "node_modules/slick-carousel/slick/slick.scss";
+@import '../node_modules/slick-carousel/slick/slick-theme.scss';
+
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 * {
   margin:0;
   padding: 0;
   box-sizing: border-box;
+
 }
 
 body {
@@ -12,34 +16,55 @@ body {
   background-color: $color-background;
   color:$color-body-font;
 
+
 }
+
+
 .grid-container {
   display: grid;
   grid-template-columns:1fr 1fr 1fr 1fr;
-  grid-template-rows: 0.1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.1fr 0.4fr 0.4fr 0.4fr 0.5fr 1fr 0.08fr;
   gap: 0px 0px;
+
   grid-template-areas:
     "Additional Additional Additional Additional"
+    "Photo Photo Photo Photo"
     "Profile Profile Profile Profile"
     "Employment Employment Employment Employment"
     "Education Education Education Education"
-    " Hobby Hobby Hobby Hobby"
-    "Contact-me Contact-me Contact-me Contact-me";
+    " Extra Extra Extra Extra"
+    "Footer Footer Footer Footer";
 }
 .Additional {
   grid-area: Additional;
   display: flex;
   justify-content: space-evenly;
   padding: 5px;
-  background-color: #B5A433;
+  background-color: $color-background-yellow;
 }
-.Employment { grid-area: Employment; }
+.Employment { grid-area: Employment;
+
+
+}
 
 .Education { grid-area: Education; }
 
-.Hobby { grid-area: Hobby; }
+.Extra { grid-area: Extra;
 
-.Contact-me { grid-area: Contact-me; }
+}
+
+.Footer { grid-area: Footer;
+        background-color: $color-nav;
+        display: flex;
+        justify-content: space-between;
+}
+.Photo {
+  grid-area: Photo;
+  display: flex;
+  justify-content: center;
+  background-color: $color-nav;
+
+}
 
 .Profile {
   display: grid;
@@ -73,12 +98,56 @@ h1 {
 }
 h2 {
   font-size: 1.2rem;
+  font-weight: 800;
+  margin: 10px;
+}
+h3 {
+  font-size: 1rem;
   font-weight: 700;
   margin: 10px;
 }
 p {
   margin:10px;
 }
+
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: #f50a0a;
+  border-radius: 0px;
+}
+::-webkit-scrollbar-thumb:hover{
+  background: #F50A0A;
+}
+::-webkit-scrollbar-track{
+  background: #ffffff;
+  border-radius: 0px;
+  box-shadow: inset 7px 10px 12px #edebda;
+}
+//::-webkit-scrollbar-thumb {
+//  background: linear-gradient(13deg, #B5A433 14%,#696128 64%);
+//  border-radius: 0px;
+//}
+//::-webkit-scrollbar-thumb:hover{
+//  background: linear-gradient(0deg, #696128 14%,#B5A433 64%);
+//}
+//::-webkit-scrollbar-track{
+//  background: #f0eccc;
+//  border-radius: 0px;
+//  box-shadow: inset 7px 10px 12px #f0f0f0;
+//}
 @import "../src/styles/navigation";
 @import "../src/styles/profile";
 @import "../src/styles/additional";
+@import "../src/styles/employment";
+@import "../src/styles/photo";
+@import "../src/styles/education";
+@import "styles/extra";
+@import "styles/footer";

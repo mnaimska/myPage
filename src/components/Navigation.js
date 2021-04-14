@@ -1,14 +1,17 @@
 import React from "react";
 import {useState} from "react";
 const Navigation =()=>{
+
         const [toggleMenu, setToggleMenu] = useState("burger-menu");
+
     const toggle=()=>{
         setToggleMenu(!toggleMenu);
 
     }
 
     return (<>
-    <nav>
+
+    <nav className=" sticky-nav">
 
         <ul>
             <div className="navigation-web">
@@ -19,11 +22,11 @@ const Navigation =()=>{
             </div>
 
             <div className="navigation-web">
-            <li className="navigation-li"><a href="#">Profile</a></li>
-            <li className="navigation-li"><a href="#">Employment</a></li>
-            <li className="navigation-li"><a href="#">Education</a></li>
-            <li className="navigation-li"><a href="#">Hobby</a></li>
-            <li className="navigation-li"><a href="#">Contact me</a></li>
+            <li className="navigation-li"><a href="#Profile">Profile</a></li>
+            <li className="navigation-li"><a href="#Employment">Employment</a></li>
+            <li className="navigation-li"><a href="#Education">Education</a></li>
+            <li className="navigation-li"><a href="#Extra">Extra</a></li>
+            <li className="navigation-li"><a href="#Footer">Details</a></li>
             </div>
         </ul>
 
@@ -41,10 +44,10 @@ const Navigation =()=>{
                     <div>
                         <ul className="navigation-mobile">
                             <li className="mobile-nav"><a href="#">Profile</a></li>
-                            <li className="mobile-nav"><a href="#">Employment</a></li>
-                            <li className="mobile-nav"><a href="#">Education</a></li>
-                            <li className="mobile-nav"><a href="#">Hobby</a></li>
-                            <li className="mobile-nav"><a href="#">Contact me</a></li>
+                            <li className="mobile-nav"><a href="#Employment">Employment</a></li>
+                            <li className="mobile-nav"><a href="#Education">Education</a></li>
+                            <li className="mobile-nav"><a href="#Extra">Extra</a></li>
+                            <li className="mobile-nav"><a href="#Footer">Details</a></li>
                         </ul>
 
                     </div>
@@ -53,6 +56,7 @@ const Navigation =()=>{
 
         </div>
     </nav>
+
     </>)
 }
 
