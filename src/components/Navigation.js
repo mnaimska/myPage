@@ -26,7 +26,7 @@ const Navigation =()=>{
             <li className="navigation-li"><a href="#Employment">Employment</a></li>
             <li className="navigation-li"><a href="#Education">Education</a></li>
             <li className="navigation-li"><a href="#Extra">Extra</a></li>
-            <li className="navigation-li"><a href="#Footer">Details</a></li>
+            {/*<li className="navigation-li"><a href="#Footer">Details</a></li>*/}
             </div>
         </ul>
 
@@ -47,7 +47,7 @@ const Navigation =()=>{
                             <li className="mobile-nav"><a href="#Employment">Employment</a></li>
                             <li className="mobile-nav"><a href="#Education">Education</a></li>
                             <li className="mobile-nav"><a href="#Extra">Extra</a></li>
-                            <li className="mobile-nav"><a href="#Footer">Details</a></li>
+                            {/*<li className="mobile-nav"><a href="#Footer">Details</a></li>*/}
                         </ul>
 
                     </div>

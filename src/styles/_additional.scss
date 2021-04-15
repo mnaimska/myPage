@@ -35,6 +35,9 @@
     background-color: #B5A433;
   }
 }
+.additional-icon:focus{
+  outline:none;
+}
 .show-hide-btn {
   width: 80px;
   background-color: #B5A433;
@@ -43,6 +46,9 @@
   border: 1px $color-nav solid;
   text-transform: uppercase;
   cursor:pointer;
+}
+.show-hide-btn:focus{
+  outline:none;
 }
 .show-hide-btn:hover {
   color:red;

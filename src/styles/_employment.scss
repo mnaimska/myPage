@@ -29,6 +29,11 @@
     display: none;
 
   }
+  .flex-row {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
 
 }
 @media (min-width:1187px){
@@ -46,10 +51,20 @@
    font-size: 1rem;
     text-transform: none;
   }
+  .flex-row {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
 }
 @media (min-width:768px){
   .span-title{
     top:-50px;
+  }
+  .flex-row {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
   }
   .span-title2 {
     top:-90px;
@@ -64,6 +79,9 @@
 a {
   text-decoration: none;
   color:red;
+  :focus {
+    outline: none;
+  }
 }
 .link-employment:hover{
  color: $color-background-yellow;
@@ -109,19 +127,17 @@ a {
   border-bottom: dotted 2px $color-nav;
   border-top: 0px;
   border-right: 0px;
+  //border-radius: 50%;
   box-shadow:$color-background-yellow -3px 3px;
   font-weight:500;
   text-transform:uppercase;
   p{
     text-transform: none;
   }
-  :visited{
-    border-left: dotted 2px $color-nav;
-    border-bottom: dotted 2px $color-nav;
-    border-top: 0px;
-    border-right: 0px;
-    box-shadow:$color-background-yellow -3px 3px;
-  }
+
+}
+.btn-employment:focus{
+  outline: none;
 }
 .middle {
   margin-left: 40%;
@@ -133,6 +149,7 @@ a {
 .flex-row {
   display: flex;
   justify-content: space-between;
+
 }
 .red-focus:hover {
   text-decoration: underline;
