@@ -46,14 +46,14 @@ const Extra =()=>{
                 <div></div>
 
                 <div className="single-window-extra second">
-                    <FaceAgentIcon/>
+                    <FaceAgentIcon className="extra-icon"/>
                 <span className="span-extra">Guide Tour in Warsaw at Local Newspapers Society, Warsaw</span>
                 </div>
                 <div></div>
                 <div></div>
                 <div></div>
 
-                <div className="single-window-extra second"><AccountBoxIcon/>
+                <div className="single-window-extra second"><AccountBoxIcon className="extra-icon"/>
                 <span className="span-extra">Member of the University Parliament at University of Warsaw</span>
                 </div>
 

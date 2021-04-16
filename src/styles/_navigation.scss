@@ -83,10 +83,10 @@ nav {
 
 
 .burgerX1 {
-  transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-5px, 8px);
   background-color: red;
-  width:40px;
-  height:5px;
+  width:25px;
+  height:2px;
   margin: 5px 0px;
 
 }
@@ -94,10 +94,10 @@ nav {
   opacity: 0;
 }
 .burgerX3 {
-  transform: rotate(45deg);
+  transform: rotate(45deg) translate(5px, -3px);
   background-color: red;
-  width:40px;
-  height:5px;
+  width:25px;
+  height:2px;
   margin: 5px 0px;
 }
 ul {

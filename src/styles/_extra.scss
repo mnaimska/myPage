@@ -19,9 +19,9 @@
 
 }
 .extra-icon {
-
+  color:red;
   :hover {
-    color:red;
+    color:$color-nav;
   }
 }
 .span-date {
@@ -55,3 +55,11 @@
 .span-extra {
   padding: 5px;
 }
+
+//.photo-lecturer{
+//  width: 400px;
+//  height: 250px;
+//  background-image: url("../graphics/543010_10154264379205684_5039278148196170873_n.jpg");
+//  background-size: contain;
+//  background-repeat: no-repeat;
+//}
