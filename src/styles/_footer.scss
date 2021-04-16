@@ -1,5 +1,18 @@
 @import "colors";
 
+@media (min-width: 0px) {
+.media-footer{
+  display: flex;
+  flex-direction: column;
+}
+}
+@media (min-width:760px) {
+.media-footer{
+  display: flex;
+  flex-direction: row;
+
+}
+}
 .details-p {
   color: $color-nav-font;
   font-size: 0.7rem;
@@ -9,4 +22,25 @@
 .h3-details {
   color: $color-nav-font;
 }
+.footer-icon {
+  margin-top: 10px;
+  color:red;
+  cursor:pointer;
+  :hover{
+    color:$color-background-yellow;
+  }
+}
+.footer-info {
+  color:$color-nav-font;
+  margin-right: 10px;
+
+}
+.footer-display {
+  display: flex;
+  flex-direction: column;
+}
+.flag-footer {
+  margin-left: 0;
+}
+
 

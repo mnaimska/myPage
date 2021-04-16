@@ -10,14 +10,14 @@ const Profile =()=>{
                 <h1>Key competences</h1>
                 <hr className="underline"/>
             </div>
-        <div className="Humanistic"><h2>Humanistic: </h2>
+        <div className="Humanistic slide-in-left"><h2>Humanistic: </h2>
             <p>
             cultural and historical field and work experience for
             governmental institutions, universities and non-governmental organisations.
             </p>
         </div>
             <hr className="underline-black"/>
-        <div className="Technical"><h2>Technical: </h2>
+        <div className="Technical slide-in-right"><h2>Technical: </h2>
             <p>
             independent management of the projects,
             active knowledge of the new technologies

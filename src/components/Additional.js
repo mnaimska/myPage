@@ -65,27 +65,22 @@ const Additional =()=>{
             </div>
 
             <button className="additional-icon" onClick={handleCellphone}>
-                {cellphone? <><br/><CellphoneIcon/> <br/>
+                {cellphone? <><br/><CellphoneIcon style={{position:"absolute", top:"70px"}}/> <br/>
                     <img className="italian-flag"/>
                     +39 393 822 8296
                     <br/>
                     <img className="polish-flag"/>
                     +48 797 955 022
-                </>:<CellphoneIcon/> }
+                </>:<CellphoneIcon style={{position:"absolute", top:"70px"}}/> }
             </button>
             <button className="additional-icon" onClick={handleEmail}>{
-                email?<><EmailOutlineIcon/><br/> mnaimska@gmail.com</>:<EmailOutlineIcon/>
+                email?<><EmailOutlineIcon style={{position:"absolute", top:"70px"}}/><br/>
+                mnaimska@gmail.com</>:<EmailOutlineIcon style={{position:"absolute", top:"70px"}}/>
 
             }</button>
-            <button className="additional-icon" onClick={handleCar}>
-                {car? <><CarIcon/><br/>
-                        Driving Licence B
-                    </>
 
-                    :<CarIcon/>}
-            </button>
             <button className="additional-icon" onClick={handleSkills}>
-                {skills?<><br/><WrenchOutlineIcon/><br/>
+                {skills?<><br/><WrenchOutlineIcon style={{position:"absolute", top:"70px"}}/><br/>
                     PRINCE 2 Foundation<br/>
                     JavaScript, React js, HTML/CSS<br/>
                     GitHub<br/>
@@ -94,20 +89,28 @@ const Additional =()=>{
                     CMS (Wordpress, Joomla)
 
 
-                </>:<WrenchOutlineIcon/> }
+                </>:<WrenchOutlineIcon style={{position:"absolute", top:"70px"}}/> }
             </button>
             <button className="additional-icon" onClick={handleLanguages}>{languages?
-                <><br/><EarthIcon/><br/>
+                <><br/><EarthIcon style={{position:"absolute", top:"70px"}}/><br/>
                     English C1 <br/>
                     Italian B2<br/>
                     German B1<br/>
                     Latin <br/>
                     Polish mothertongue<br/>
-                </>:<EarthIcon/>
+                </>:<EarthIcon style={{position:"absolute", top:"70px"}}/>
             }</button>
-            <button className="additional-icon" onClick={handleDog}>{dog?<><br/><DogSideIcon/><br/>
+             <button className="additional-icon" onClick={handleCar}>
+                 {car? <><CarIcon style={{position:"absolute", top:"70px"}}/><br/>
+                         Driving Licence B
+                     </>
+
+                     :<CarIcon style={{position:"absolute", top:"70px"}}/>}
+             </button>
+            <button className="additional-icon" onClick={handleDog}>{dog?<><br/><DogSideIcon
+                style={{position:"absolute", top:"70px"}}/><br/>
                 Training the retrieving dogs
-            </>:<DogSideIcon/>}</button>
+            </>:<DogSideIcon style={{position:"absolute", top:"70px"}}/>}</button>
 
         </div>
 

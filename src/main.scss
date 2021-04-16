@@ -83,7 +83,7 @@ body {
   grid-area: Profile;
 }
 
-.Humanistic { grid-area: Humanistic; }
+.Humanistic { grid-area: Humanistic;}
 
 .Technical { grid-area: Technical; }
 
@@ -136,6 +136,37 @@ p {
   border-radius: 0px;
   box-shadow: inset 7px 10px 12px #edebda;
 }
+
+.slide-in-left {
+  animation: slide-in-left 0.8s linear both;
+}
+
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slide-in-right {
+  animation: slide-in-right 0.8s linear both;
+}
+
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 //::-webkit-scrollbar-thumb {
 //  background: linear-gradient(13deg, #B5A433 14%,#696128 64%);
 //  border-radius: 0px;

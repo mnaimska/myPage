@@ -20,6 +20,10 @@
     width: 300px;
     height: 150px;
   }
+  .thirdPhoto {
+    width: 300px;
+    height: 200px;
+  }
 }
 @media (min-width: 375px){
   .single-photo-cv{
@@ -49,6 +53,10 @@
     height: 300px;
   }
   .single-photo-work2 {
+    width: 500px;
+    height: 300px;
+  }
+  .thirdPhoto {
     width: 500px;
     height: 300px;
   }
@@ -112,10 +120,16 @@
   margin:5px;
   //flex-basis: 50%;
   //flex-grow: 1;
-  background-image: url("../graphics/32915302_2019405684968060_1017106242046263296_n.jpg");
+  background-image: url("../graphics/Working Test Piacenza 2019 cart. 3 senza titolo 24 febbraio 2019 0284-610.jpg");
   background-size: contain;
   //width: 500px;
   //height: 300px;
+  background-repeat: no-repeat;
+}
+.thirdPhoto {
+  margin:5px;
+  background-image: url("../graphics/Working Test Piacenza 2019 cart. 3 senza titolo 24 febbraio 2019 0284-587.jpg");
+  background-size: contain;
   background-repeat: no-repeat;
 }
 .twoPhotos {
