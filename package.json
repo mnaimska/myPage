@@ -18,10 +18,8 @@
     "slick-carousel": "^1.8.1",
     "web-vitals": "^1.1.1"
   },
-  "homepage": "https://mnaimska.github.io/myPage/",
+  "homepage": "https://mnaimska.eu",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
