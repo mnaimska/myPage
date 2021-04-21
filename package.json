@@ -18,7 +18,6 @@
     "slick-carousel": "^1.8.1",
     "web-vitals": "^1.1.1"
   },
-  "homepage": "https://www.mnaimska.eu",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
