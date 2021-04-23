@@ -5,8 +5,7 @@ import {CellphoneIcon,
         CarIcon,
         DogSideIcon,
         WrenchOutlineIcon,
-        EarthIcon } from "@icons/material";
-
+        EarthIcon, InformationOutlineIcon } from "@icons/material";
 
 const Additional =()=>{
 
@@ -17,7 +16,7 @@ const Additional =()=>{
     const [skills, setSkills]=useState(false);
     const [languages, setLanguages]=useState(false);
     const [dog, setDog]=useState(false);
-
+    const [info, setInfo]=useState(false);
 
     const handleShowAll=()=>{
         setCellphone(true);
@@ -26,6 +25,7 @@ const Additional =()=>{
         setSkills(true);
         setLanguages(true);
         setDog(true);
+        setInfo(true);
         setShowAll(!showAll);
     }
     const handleSwitchOff =()=>{
@@ -35,6 +35,7 @@ const Additional =()=>{
         setSkills(false);
         setLanguages(false);
         setDog(false);
+        setInfo(false);
         setShowAll(!showAll);
     }
     const handleCellphone=()=>{
@@ -54,6 +55,9 @@ const Additional =()=>{
     }
     const handleDog=()=>{
         setDog(!dog);
+    }
+    const handleInfo=()=>{
+        setInfo(!info);
     }
     return <>
          <div className="Additional web-additional">
@@ -111,6 +115,13 @@ const Additional =()=>{
                 style={{position:"absolute", top:"70px"}}/><br/>
                 Training the retrieving dogs
             </>:<DogSideIcon style={{position:"absolute", top:"70px"}}/>}</button>
+             <button className="additional-icon" onClick={handleInfo}>{info?<><br/><InformationOutlineIcon
+                 style={{position:"absolute", top:"70px"}}/><br/>
+                 I give my permission for the processing
+                 of my personal data that is essential for the recruitment process,<br/>
+                 in accordance with the Act of 29.08.1997 on the Protection of Personal Data
+                 (Journal of Laws No. 133, item 883 amended).
+             </>:<InformationOutlineIcon style={{position:"absolute", top:"70px"}}/>}</button>
 
         </div>
 
@@ -166,6 +177,12 @@ const Additional =()=>{
                 <button className="additional-icon" onClick={handleDog}>{dog?<><br/><DogSideIcon/><br/>
                     Training the retrieving dogs
                 </>:<DogSideIcon/>}</button>
+                <button className="additional-icon" onClick={handleInfo}>{info?<><br/><InformationOutlineIcon/><br/>
+                    I give my permission for the processing
+                    of my personal data that is essential for the recruitment process,<br/>
+                    in accordance with the Act of 29.08.1997 on the Protection of Personal Data
+                    (Journal of Laws No. 133, item 883 amended).
+                </>:<InformationOutlineIcon/>}</button>
 
             </div>
 

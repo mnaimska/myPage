@@ -19,11 +19,7 @@ const Footer=()=>{
 
     <div className="Footer">
         <div>
-        <h3 className="h3-details">GDPR</h3>
-        <p className="details-p">I give my permission for the processing
-            of my personal data that is essential for the recruitment process,<br/>
-            in accordance with the Act of 29.08.1997 on the Protection of Personal Data
-            (Journal of Laws No. 133, item 883 amended).</p></div>
+        </div>
         <div className="media-footer">
         <div>
         <CellphoneIcon className="footer-icon" onClick={handleCellphoneFooter}/>

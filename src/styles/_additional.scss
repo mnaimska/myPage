@@ -5,6 +5,7 @@
     display: flex;
     flex-direction: column;
     padding-top: 60px;
+    align-items: center;
   }
   .web-additional {
     display: none;
@@ -28,6 +29,7 @@
   background-color: #B5A433;
   border: none;
   cursor: pointer;
+  max-width:200px;
 
 
   :hover {

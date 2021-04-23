@@ -35,20 +35,20 @@ const Education =()=>{
             </div>
 
             <div className="single-edu-div-4">
-            <span className="span-edu">October 2004 - June 2007</span>
-        <div className="edu-block">
-
-            <span style={{textTransform:"Uppercase"}}>Bachelor Degree,</span> Mediterranean Civilization,
-            University of Warsaw, Centre for Studies on the Classical Tradition, Warsaw
-        </div>
-            </div>
-
-            <div className="single-edu-div-5">
             <span className="span-edu">October 2007 - June 2008</span>
         <div className="edu-block">
 
             <span style={{textTransform:"Uppercase"}}>Erasmus Program,</span> Erasmus Program at the National and Kapodistrian University of Athens,
             Greece, the Faculty of Political Science, Athens
+        </div>
+            </div>
+
+            <div className="single-edu-div-5">
+            <span className="span-edu">October 2004 - June 2007</span>
+        <div className="edu-block">
+
+            <span style={{textTransform:"Uppercase"}}>Bachelor Degree,</span> Mediterranean Civilization,
+            University of Warsaw, Centre for Studies on the Classical Tradition, Warsaw
         </div>
             </div>
 

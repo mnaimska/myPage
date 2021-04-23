@@ -20,20 +20,20 @@ body {
 }
 
 
-.grid-container {
-  display: grid;
-  grid-template-columns:1fr 1fr 1fr 1fr;
-  grid-template-rows: 0.1fr 0.4fr 0.4fr 0.4fr 0.5fr 1.11fr 0.08fr;
-  gap: 0px 0px;
-  grid-template-areas:
-    "Additional Additional Additional Additional"
-    "Photo Photo Photo Photo"
-    "Profile Profile Profile Profile"
-    "Employment Employment Employment Employment"
-    "Education Education Education Education"
-    " Extra Extra Extra Extra"
-    "Footer Footer Footer Footer";
-}
+//.grid-container {
+//  display: grid;
+//  grid-template-columns:1fr 1fr 1fr 1fr;
+//  grid-template-rows: 0.1fr 0.4fr 0.4fr 0.4fr 0.5fr 1.11fr 0.08fr;
+//  gap: 0px 0px;
+//  grid-template-areas:
+//    "Additional Additional Additional Additional"
+//    "Photo Photo Photo Photo"
+//    "Profile Profile Profile Profile"
+//    "Employment Employment Employment Employment"
+//    "Education Education Education Education"
+//    " Extra Extra Extra Extra"
+//    "Footer Footer Footer Footer";
+//}
 .Additional {
   grid-area: Additional;
   display: flex;
