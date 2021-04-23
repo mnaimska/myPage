@@ -20,19 +20,20 @@ const Footer=()=>{
     <div className="Footer">
         <div>
         </div>
-        <div className="media-footer">
         <div>
-        <CellphoneIcon className="footer-icon" onClick={handleCellphoneFooter}/>
-        {cellphoneFooter? <>
-            <div className="footer-display">
-            <div className="footer-info">
-            <img className="italian-flag flag-footer"/>
-            +39 393 822 8296
-            <br/>
-            <img className="polish-flag flag-footer"/>
-            +48 797 955 022</div></div>
-        </>:<CellphoneIcon/> }
+            <CellphoneIcon className="footer-icon" onClick={handleCellphoneFooter}/>
+            {cellphoneFooter? <>
+                <div className="footer-display">
+                    <div className="footer-info">
+                        <img className="italian-flag flag-footer"/>
+                        +39 393 822 8296
+                        <br/>
+                        <img className="polish-flag flag-footer"/>
+                        +48 797 955 022</div></div>
+            </>:<CellphoneIcon/> }
         </div>
+        <div className="media-footer">
+
         <div>
             <EmailOutlineIcon className="footer-icon" onClick={handleEmailFooter}/>
             {emailFooter?<>
