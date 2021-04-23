@@ -13,7 +13,9 @@
   //grid-column-gap: 5px;
   //grid-row-gap: 30px;
 
-  margin: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
 
 
 
@@ -39,6 +41,7 @@
   flex-direction: column;
   align-items: center;
   box-shadow: $color-background-yellow -3px 3px;
+
   //padding: 5px;
 }
 .first {
